@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+  <button onclick="myFunction()">Click Me</button>
+  <button onclick="restoreDiv()">Restore</button>
+
+  <script>
+    function myFunction() {
+      // Method 1: Hiding the element
+      document.getElementById("myDiv").style.display = "none";
+    }
+    function restoreDiv() {
+      // Method 1: Restoring visibility
+      document.getElementById("myDiv").style.display = "block";
+
+      // Method 2: Using a class for better styling control
+      // document.getElementById("myDiv").classList.remove("hidden"); 
+    }
+  </script>
+</body>
+</html>
